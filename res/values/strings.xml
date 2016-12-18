@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reminiscens</string>
+    <string name="action_settings">Settings</string>
+   
+    
+	<string-array name="domanda">
+        <item>"Quale è il nome di tua madre?"</item>
+        <item>"Quale era il nome della città in cui sei cresciuto?"</item>
+        <item>"Quanti fratelli e sorelle hai?"</item>
+        <item>"Quale è il tuo titolo di studio?"</item>
+        <item>"A quanti anni ti sei sposato?"</item>
+    </string-array>
+    
+</resources>
