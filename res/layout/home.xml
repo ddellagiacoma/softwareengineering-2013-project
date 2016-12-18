@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scrivania"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/listaSinistra"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/librosinistra"
+        android:gravity="center"
+       
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storie Personali"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/listviewHomePersonal"
+            android:layout_width="430dp"
+            android:layout_height="350dp"
+           
+           />
+
+        <Button
+            android:id="@+id/btnHomeImpostazioni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="impostazioni"
+            android:text="Impostazioni"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listaDestra"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/librodestra"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storie Generali"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/listviewHomeGeneral"
+            android:layout_width="430dp"
+            android:layout_height="350dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnHomeAggiungi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="aggiungi"
+                android:text="Aggiungi"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnHomeAmici"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="amici"
+                android:text="Amici"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

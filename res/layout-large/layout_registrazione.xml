@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/registrazione"
+    android:orientation="vertical"
+    tools:context=".Login" >
+
+    <TableLayout
+        android:id="@+id/RelativeLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pagina"
+   >
+
+        <TableRow
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Nome"
+                android:textSize="30sp"
+                 />
+
+            <EditText
+                android:id="@+id/txtRegistrazioneNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:ems="10"
+                android:hint="Nome"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+               android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Cognome"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/txtRegistrazioneCognome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:ems="10"
+                android:hint="Cognome"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Data Nascita"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinnerRegistrazioneGiorno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerRegistrazioneMese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerRegistrazioneAnno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+               android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Domanda"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/SpinnerRegistrazioneDomanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:entries="@array/domanda"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+               android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Risposta"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/txtRegistrazioneRisposta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:ems="10"
+                android:hint="Risposta Segreta"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+               android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Risposta"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/txtRegistrazioneRisposta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:ems="10"
+                android:hint="Conferma Risposta"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnRegistrazioneRegistrami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLogIn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_registrami"
+        android:onClick="registrami" />
+
+</RelativeLayout>

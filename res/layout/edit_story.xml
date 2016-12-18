@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titolo"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/testo_titolo"
+        android:text="Data"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/visualizza_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/titolo"
+        android:text="" />
+
+    <Button
+        android:id="@+id/prendi_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/data"
+        android:text="Imposta la data" />
+
+    <EditText
+        android:id="@+id/testo_titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/data"
+        android:layout_alignBottom="@id/data"
+        android:layout_toRightOf="@id/titolo"
+        android:ems="10"
+        android:width="200dp" >
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="500px"
+        android:layout_height="150px"
+        android:layout_below="@id/titolo" >
+
+        <TextView
+            android:id="@+id/testo_storia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="storia scritta dall&apos;utente" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/salva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/titolo"
+        android:layout_below="@+id/ScrollView"
+        android:layout_marginTop="72dp"
+        android:text="Salva" />
+
+    <Button
+        android:id="@+id/aggiungi_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/salva"
+        android:layout_alignBottom="@+id/salva"
+        android:layout_alignRight="@+id/ScrollView"
+        android:text="Aggiungi Foto" />
+
+    <ListView
+        android:id="@+id/lista_foto"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/prendi_data"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:scrollbarSize="12dip"
+        android:scrollbarStyle="outsideInset" >
+        
+    </ListView>
+
+</RelativeLayout>

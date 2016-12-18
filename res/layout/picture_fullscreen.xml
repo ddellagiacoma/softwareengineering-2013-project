@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativePicFS"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:orientation="horizontal">
+	<ImageView 
+	    android:id="@+id/pictureFS" 
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:clickable="true" />
+</LinearLayout>
+    

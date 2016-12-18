@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scrivania">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/librosinistra"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginLeft="35dp" >
+
+            
+            <EditText
+                
+                android:id="@+id/edit_title"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Titolo Storia"
+                android:typeface="serif"
+                android:textStyle="italic"
+                android:textSize="35sp"
+                android:selectAllOnFocus="true"
+               />
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginLeft="2dp" >
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Luogo"
+           	android:typeface="serif"
+            android:textStyle="italic"
+            android:textSize="25sp" 
+      		android:selectAllOnFocus="true"
+            android:layout_marginLeft="33dp"/>
+
+
+
+		            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="10/11/2013"
+                android:textSize="25sp"
+                />
+        
+
+
+</LinearLayout>
+      
+
+
+
+
+<EditText
+            android:id="@+id/edit_description"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="10dp"
+            />
+
+                    <Button
+                        android:layout_marginTop="20dp"
+                android:id="@+id/button_gestisci_data"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/layout_data"
+                android:onClick="onDataChange" />
+        
+        <Button
+                android:id="@+id/button_salva"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/layout_salva"
+                android:onClick="onSaveClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/librodestra"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titolo_lista_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foto"
+                            android:typeface="serif"
+                android:textStyle="italic"
+            android:textSize="50sp" />
+
+        <GridView
+			android:id="@+id/pictures"
+		    android:layout_width="350dp"
+		    android:layout_marginRight="10dp" 
+		    android:layout_height="350dp"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="25dp"
+		    android:numColumns="3"
+		    android:verticalSpacing="10dp"
+		    android:horizontalSpacing="10dp"
+		    android:stretchMode="columnWidth"
+		    android:gravity="center"
+		    android:clickable="true"
+		    android:longClickable="true" />
+   
+        
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/button_gestisci_media"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/layout_media"
+                android:onClick="onManageMedia" />
+        
+        
+        
+        
+        </LinearLayout>
+
+</LinearLayout>
